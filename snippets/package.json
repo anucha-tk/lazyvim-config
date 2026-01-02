@@ -13,6 +13,22 @@
         ],
         "path": "./html-tailwind.json"
       }
+    ],
+    "snippets": [
+      {
+        "language": [
+          "python"
+        ],
+        "path": "./python-snippets.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": [
+          "xml"
+        ],
+        "path": "./xml-snippets.json"
+      }
     ]
   }
 }
