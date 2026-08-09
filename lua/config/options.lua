@@ -5,3 +5,7 @@ local opt = vim.opt
 
 opt.relativenumber = false
 opt.swapfile = false
+
+-- Disable inlay hints globally in LazyVim
+vim.g.lazyvim_inlay_hints = { enabled = false }
+
