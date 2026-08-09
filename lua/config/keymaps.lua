@@ -44,3 +44,15 @@ end, { desc = "Copy relative path with line number" })
 vim.keymap.set("v", "<leader>gy", function()
   copy_path_with_line(true)
 end, { desc = "Copy relative path with line range" })
+
+-- Open current HTML / file in default browser
+vim.keymap.set("n", "<leader>co", function()
+  local file = vim.api.nvim_buf_get_name(0)
+  if file == "" then
+    vim.notify("No file open", vim.log.levels.WARN)
+    return
+  end
+  vim.ui.open(file)
+  vim.notify("Opened in browser: " .. vim.fn.expand("%:t"), vim.log.levels.INFO)
+end, { desc = "Open HTML / File in Browser" })
+
